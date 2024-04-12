@@ -2,3 +2,4 @@
 resolver = "2"
 members = ["day_?/*"]
 exclude = ["rustlings"]
+repository = "https://github.com/oscilloscode/rust-workshop"
