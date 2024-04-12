@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+            sparse-checkout: |
+              day_4
       - name: Ensure standard formatting
         run: cargo fmt --check
       - name: Check code quality with clippy
