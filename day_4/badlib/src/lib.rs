@@ -10,12 +10,6 @@ pub fn badly_formatted() {
     println!("Don't change it until CI fails because of it.");
 }
 
-pub fn clippy_doesnt_like_this() {
-    if i32::MAX < i32::MIN {
-        println!("This is ridiculous.");
-    }
-}
-
 pub fn dangerous_cast(n: i64) -> i32 {
     // In my opinion, the `as` keyword should be used sparingly.
     // This conversion is lossy and may not do what you expect.
